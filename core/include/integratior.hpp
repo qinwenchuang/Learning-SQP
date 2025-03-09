@@ -24,14 +24,14 @@ class Integrator {
   Vector K3_ = Vector::Zero(N_);
   Vector K4_ = Vector::Zero(N_);
 
-  Matrix A0_ = Vector::Zero(N_, N_);
-  Matrix B0_ = Vector::Zero(N_, M_);
-  Matrix A1_ = Vector::Zero(N_, N_);
-  Matrix B1_ = Vector::Zero(N_, M_);
-  Matrix A2_ = Vector::Zero(N_, N_);
-  Matrix B2_ = Vector::Zero(N_, M_);
-  Matrix A3_ = Vector::Zero(N_, N_);
-  Matrix B3_ = Vector::Zero(N_, M_);
+  Matrix A0_ = Matrix::Zero(N_, N_);
+  Matrix B0_ = Matrix::Zero(N_, M_);
+  Matrix A1_ = Matrix::Zero(N_, N_);
+  Matrix B1_ = Matrix::Zero(N_, M_);
+  Matrix A2_ = Matrix::Zero(N_, N_);
+  Matrix B2_ = Matrix::Zero(N_, M_);
+  Matrix A3_ = Matrix::Zero(N_, N_);
+  Matrix B3_ = Matrix::Zero(N_, M_);
   std::shared_ptr<VehicleModel> model_ptr = std::make_shared<VehicleModel>();
 };
 

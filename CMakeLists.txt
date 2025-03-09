@@ -19,6 +19,8 @@ SET(src_file
 
 ADD_EXECUTABLE(Result ${src_file})
 
+add_subdirectory(test)
+
 target_link_libraries(Result
 ${catkin_LIBRARIES}  qpOASES
 )

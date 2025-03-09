@@ -1,11 +1,11 @@
 #pragma once
 
 #include <Eigen/Dense>
+#include <cmath>
 #include <ctime>
 #include <iostream>
 #include <limits>
 #include <memory>
-#include <limits>
 
 #include "problem.hpp"
 

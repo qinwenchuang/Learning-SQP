@@ -34,7 +34,7 @@ void Integrator::Jacobian(const Vector &x, const Vector &u, const double T,
 
   value->block(0, 0, N_, N_) =
       Matrix::Identity(N_, N_) + (A0T + 2.0 * A1T + 2.0 * A2T + A3T) / 6.0;
-  value->block(N_, N_, N_, M_) = (B0T + 2.0 * B1T + 2.0 * B2T + B3T) / 6.0;
+  value->block(0, N_, N_, M_) = (B0T + 2.0 * B1T + 2.0 * B2T + B3T) / 6.0;
 }
 
 }  // namespace sqp
